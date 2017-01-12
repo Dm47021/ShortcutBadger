@@ -1,4 +1,4 @@
-package me.leolin.shortcutbadger;
+package com.dm47021.cyanbadgeprovider;
 
 import android.content.ComponentName;
 import android.content.Context;
@@ -11,19 +11,9 @@ import android.util.Log;
 import java.util.LinkedList;
 import java.util.List;
 
-import me.leolin.shortcutbadger.impl.AdwHomeBadger;
-import me.leolin.shortcutbadger.impl.ApexHomeBadger;
-import me.leolin.shortcutbadger.impl.AsusHomeLauncher;
-import me.leolin.shortcutbadger.impl.CyanogenmodTrebuchetBadger;
-import me.leolin.shortcutbadger.impl.DefaultBadger;
-import me.leolin.shortcutbadger.impl.HuaweiHomeBadger;
-import me.leolin.shortcutbadger.impl.NewHtcHomeBadger;
-import me.leolin.shortcutbadger.impl.NovaHomeBadger;
-import me.leolin.shortcutbadger.impl.OPPOHomeBader;
-import me.leolin.shortcutbadger.impl.SamsungHomeBadger;
-import me.leolin.shortcutbadger.impl.SonyHomeBadger;
-import me.leolin.shortcutbadger.impl.XiaomiHomeBadger;
-import me.leolin.shortcutbadger.impl.ZukHomeBadger;
+import com.dm47021.cyanbadgeprovider.impl.CyanogenmodTrebuchetBadger;
+import com.dm47021.cyanbadgeprovider.impl.DefaultBadger;
+
 
 
 /**
@@ -36,19 +26,7 @@ public final class ShortcutBadger {
     private static final List<Class<? extends Badger>> BADGERS = new LinkedList<Class<? extends Badger>>();
 
     static {
-        BADGERS.add(AdwHomeBadger.class);
-        BADGERS.add(ApexHomeBadger.class);
-        BADGERS.add(CyanogenmodTrebuchetBadger.class); //Launcher3 Based --DM47021
-        BADGERS.add(NewHtcHomeBadger.class);
-        BADGERS.add(NovaHomeBadger.class);
-        BADGERS.add(SonyHomeBadger.class);
-        BADGERS.add(XiaomiHomeBadger.class);
-        BADGERS.add(AsusHomeLauncher.class);
-        BADGERS.add(HuaweiHomeBadger.class);
-//      BADGERS.add(LGHomeBadger.class);
-        BADGERS.add(OPPOHomeBader.class);
-        BADGERS.add(SamsungHomeBadger.class);
-        BADGERS.add(ZukHomeBadger.class);
+        BADGERS.add(CyanogenmodTrebuchetBadger.class); //Launcher3 Based --DM47021 
     }
 
     private static Badger sShortcutBadger;
@@ -146,13 +124,6 @@ public final class ShortcutBadger {
         }
 
         if (sShortcutBadger == null) {
-            if (Build.MANUFACTURER.equalsIgnoreCase("Xiaomi"))
-                sShortcutBadger = new XiaomiHomeBadger();
-            else if (Build.MANUFACTURER.equalsIgnoreCase("ZUK"))
-                sShortcutBadger = new ZukHomeBadger();
-            else if (Build.MANUFACTURER.equalsIgnoreCase("OPPO"))
-                sShortcutBadger = new OPPOHomeBader();
-            else
                 sShortcutBadger = new DefaultBadger();
         }
 

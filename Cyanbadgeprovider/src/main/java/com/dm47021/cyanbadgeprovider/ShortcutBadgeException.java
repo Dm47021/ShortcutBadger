@@ -1,4 +1,4 @@
-package me.leolin.shortcutbadger;
+package com.dm47021.cyanbadgeprovider;
 
 public class ShortcutBadgeException extends Exception {
     public ShortcutBadgeException(String message) {

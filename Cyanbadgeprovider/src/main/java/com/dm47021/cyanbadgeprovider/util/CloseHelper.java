@@ -1,4 +1,4 @@
-package me.leolin.shortcutbadger.util;
+package com.dm47021.cyanbadgeprovider.util;
 
 import android.database.Cursor;
 

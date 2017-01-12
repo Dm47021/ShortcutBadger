@@ -1,12 +1,12 @@
-package me.leolin.shortcutbadger.impl;
+package com.dm47021.cyanbadgeprovider.impl;
 
 import android.content.ContentResolver;
 import android.content.ContentValues;
 import android.content.Context;
 import android.net.Uri;
-import me.leolin.shortcutbadger.ShortcutBadgeException;
-import me.leolin.shortcutbadger.ShortcutBadger;
-import me.leolin.shortcutbadger.util.ImageUtil;
+import com.dm47021.cyanbadgeprovider.ShortcutBadgeException;
+import com.dm47021.cyanbadgeprovider.ShortcutBadger;
+import com.dm47021.cyanbadgeprovider.util.ImageUtil;
 
 import java.util.Arrays;
 import java.util.List;

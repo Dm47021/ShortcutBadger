@@ -6,12 +6,12 @@ buildscript {
         classpath 'com.android.tools.build:gradle:2.1.2'
     }
     ext {
-        POM_NAME = 'Shortcutbadger'
+        POM_NAME = 'Cyanbadgeprovider'
         POM_PACKAGING = 'aar'
-        POM_ARTIFACT_ID = 'shortcutbadger'
+        POM_ARTIFACT_ID = 'cyanbadgeprovider'
         VERSION_NAME = '1.1.8'
         VERSION_CODE = 1
-        GROUP = 'me.leolin'
+        GROUP = 'com.dm47021'
     }
 }
 

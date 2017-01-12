@@ -1,4 +1,4 @@
-package me.leolin.shortcutbadger;
+package com.dm47021.cyanbadgeprovider;
 
 import android.content.ComponentName;
 import android.content.Context;
