@@ -14,6 +14,7 @@ import java.util.List;
 import me.leolin.shortcutbadger.impl.AdwHomeBadger;
 import me.leolin.shortcutbadger.impl.ApexHomeBadger;
 import me.leolin.shortcutbadger.impl.AsusHomeLauncher;
+import me.leolin.shortcutbadger.impl.CyanogenmodTrebuchetBadger;
 import me.leolin.shortcutbadger.impl.DefaultBadger;
 import me.leolin.shortcutbadger.impl.HuaweiHomeBadger;
 import me.leolin.shortcutbadger.impl.NewHtcHomeBadger;
@@ -37,13 +38,14 @@ public final class ShortcutBadger {
     static {
         BADGERS.add(AdwHomeBadger.class);
         BADGERS.add(ApexHomeBadger.class);
+        BADGERS.add(CyanogenmodTrebuchetBadger.class); //Launcher3 Based --DM47021
         BADGERS.add(NewHtcHomeBadger.class);
         BADGERS.add(NovaHomeBadger.class);
         BADGERS.add(SonyHomeBadger.class);
         BADGERS.add(XiaomiHomeBadger.class);
         BADGERS.add(AsusHomeLauncher.class);
         BADGERS.add(HuaweiHomeBadger.class);
-//        BADGERS.add(LGHomeBadger.class);
+//      BADGERS.add(LGHomeBadger.class);
         BADGERS.add(OPPOHomeBader.class);
         BADGERS.add(SamsungHomeBadger.class);
         BADGERS.add(ZukHomeBadger.class);
